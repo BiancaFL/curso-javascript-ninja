@@ -62,9 +62,9 @@ function book(name){
 	var livro = {
 		livro1: {quantidadePaginas: 10, autor: 'Bianca', editora: 'Atikas'},
 		livro2: {quantidadePaginas: 15, autor: 'Marilde', editora: 'Globo'},
-		livro3: {quantidadePaginas: 20, autor: 'Henrique', editora: 'SBT'},
-		
+		livro3: {quantidadePaginas: 20, autor: 'Henrique', editora: 'SBT'},	
 	}
+	
 	return name ? livro[name] : livro;
 }
 
@@ -80,6 +80,7 @@ Ainda com a função acima, imprima a quantidade de páginas de um livro qualque
 usando a frase:
 "O livro [NOME_DO_LIVRO] tem [X] páginas!"
 */
+
 console.log('O livro2 tem ' + book('livro2').quantidadePaginas + ' páginas!')
 
 /*
@@ -95,3 +96,4 @@ a frase:
 "O livro [NOME_DO_LIVRO] foi publicado pela editora [NOME_DA_EDITORA]."
 */
 console.log('O livro2 foi publicado pela editora ' + book('livro2').editora)
+
