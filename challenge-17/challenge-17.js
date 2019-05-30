@@ -21,7 +21,7 @@
 	no console:
 	*/
 	console.log( 'Adicionando seu nome no texto:' );
-	console.log( text.replace(/Manuel Marques de Sousa/, 'Bianca Filtre Lima'));
+	console.log( text.replace(/Manuel Marques de Sousa/g, 'Bianca Filtre Lima'));
 
 	/*
 	Agora, substitua a palavra "brasileiro" por sua cidade natal e mostre no
@@ -29,7 +29,7 @@
 	Ex: Se você for da São Paulo, substitua por "paulista".
 	*/
 	console.log( '\nTrocando naturalidade:' );
-	console.log( text.replace(/brasileiro/, 'paulista'));
+	console.log( text.replace(/brasileiro/g, 'paulista'));
 	
 	
 	/*
@@ -45,7 +45,7 @@
 	minúsculo por "0" (número zero). Mostre o resultado no console:
 	*/
 	console.log( '\nTrocando de "D" a "h" por "0":' );
-	console.log( text.replace(/[D-Za-h]/g, '0'));
+	console.log( text.replace(/[D-Hd-h]/g, '0'));
 	
 
 	/*
@@ -61,7 +61,7 @@
 	o método `toUpperCase()`. Mostre o resultado no console:
 	*/
 	console.log( '\n"O Centauro de Luvas" em caixa alta:' );
-	console.log(text.replace(/O Centauro de Luvas/, function(){
+	console.log(text.replace(/O Centauro de Luvas/g, function(){
 		//console.log (arguments);
 		return arguments[0].toUpperCase();}));
 
